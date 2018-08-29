@@ -1,0 +1,17 @@
+{
+  "name": "vue-admin-template",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "Yakima <cleveryun@163.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cd template && npm run dev",
+    "build": "cd template && node build/build.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
