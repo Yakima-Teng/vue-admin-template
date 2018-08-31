@@ -1,0 +1,49 @@
+// 这里引用、写全局的样式
+@import './reset';
+html, body, #app, .app-main, .page {
+  width: 100%;
+  height: 100%;
+}
+.page {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-color: #efeff4;
+  background-color: $gray;
+}
+.none-touch-action {
+  touch-action: none;
+}
+.mui-bar-nav {
+  a {
+    color: #ffffff;
+    touch-action: none;
+  }
+  span.mui-icon-left-nav {
+    color: #ffffff;
+  }
+}
+// 组件过渡动画
+.fade-enter-active {
+  transition: opacity .5s
+}
+.fade-leave-active {
+  transition: opacity 0s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+.mui-content {
+  background-color: inherit;
+}
+
+// 在Empty组件显示时，不显示下拉刷新上拉加载更多提示文字
+.component-empty.show ~ .mui-pull-bottom-tips {
+  display: none;
+}
+.component-empty.waiting ~ .mui-pull-bottom-tips {
+  display: none;
+}
+.hide-mui-pull-bottom-tips .mui-pull-bottom-tips {
+  display: none;
+}
+
